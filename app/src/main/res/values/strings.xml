@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PizzaRestaurant</string>
+    <string name="store">Store</string>
+    <string name="your_name">Your Name</string>
+    <string name="please_fill_your_name">Please fill your name</string>
+    <string name="submit">Submit</string>
+    <string-array name="store_place">
+        <item>Cibiru</item>
+        <item>Ujung Berung</item>
+        <item>Cimahi</item>
+    </string-array>
+</resources>

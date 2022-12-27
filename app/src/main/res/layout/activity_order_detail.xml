@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetailActivity">
+
+    <TextView
+        android:id="@+id/Order_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Order Detail"
+        android:textColor="@color/red"
+        android:layout_marginTop="34dp"
+        android:layout_marginStart="46dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/order_costumer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Order_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Asep"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="11dp"/>
+
+    <TextView
+        android:id="@+id/order_costumer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/order_costumer1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Store: Cihampelas"
+        android:layout_marginStart="51dp"/>
+    <TextView
+        android:id="@+id/order_costumer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/order_costumer2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Pepperoni Pizza sudah dipesan"
+        android:layout_marginStart="51dp"/>
+    <TextView
+        android:id="@+id/pengiriman_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/order_costumer3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Pengiriman"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/red"
+        android:textSize="20sp"/>
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Ambil Sendiri"
+        app:layout_constraintTop_toBottomOf="@id/pengiriman_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="11dp"
+        android:layout_marginStart="51dp"/>
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Fast Delivery (min 30 menit sampai)"
+        app:layout_constraintTop_toBottomOf="@id/cb1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="51dp"/>
+
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/red"
+        android:text="Done"
+        app:layout_constraintTop_toBottomOf="@id/cb2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="77dp"/>
+
+    <TextView
+        android:id="@+id/text_info"
+        android:layout_width="320dp"
+        android:layout_height="84dp"
+        android:text="Terima kasih Pa Asep sudah memesan ditoko kami, pesanan Pepperoni Pizza anda dikirim menggunakan Fast Delivery "
+        app:layout_constraintTop_toBottomOf="@id/button_done"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="132dp"
+        android:background="#C4C4C4"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
